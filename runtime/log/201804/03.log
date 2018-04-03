@@ -1,0 +1,283 @@
+[ 2018-04-03T09:19:59+08:00 ] ::1 ::1 GET /favicon.ico
+[ log ] localhost:90/favicon.ico [运行时间：0.031000s][吞吐率：32.26req/s] [内存消耗：1,286.84kb] [文件加载：37]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:90',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost:90/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Webstorm-a327319a=a77430c4-efbc-4a9d-8ca2-a54c40e80e3e',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-03T09:19:59+08:00 ] ::1 ::1 POST /index.phpapi/Index/queryClassification
+[ log ] localhost:90/index.phpapi/Index/queryClassification [运行时间：1.067000s][吞吐率：0.94req/s] [内存消耗：2,219.42kb] [文件加载：47]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Index',
+    2 => 'queryClassification',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:90',
+  'connection' => 'keep-alive',
+  'content-length' => '32',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:90',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/json;charset=UTF-8',
+  'referer' => 'http://localhost:90/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Webstorm-a327319a=a77430c4-efbc-4a9d-8ca2-a54c40e80e3e',
+)
+[ info ] [ PARAM ] array (
+  '/index_phpapi/Index/queryClassification' => '',
+  'param' => 
+  array (
+    'token' => '',
+    'sort' => '',
+  ),
+)
+[ info ] [ RUN ] app\api\controller\Index->queryClassification[ D:\WWW\forum\application\api\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.015000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_classification` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `cms_classification` [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-04-03T09:19:59+08:00 ] ::1 ::1 POST /index.phpapi/Index/queryRank
+[ log ] localhost:90/index.phpapi/Index/queryRank [运行时间：1.102000s][吞吐率：0.91req/s] [内存消耗：2,235.43kb] [文件加载：47]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Index',
+    2 => 'queryRank',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:90',
+  'connection' => 'keep-alive',
+  'content-length' => '32',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:90',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/json;charset=UTF-8',
+  'referer' => 'http://localhost:90/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Webstorm-a327319a=a77430c4-efbc-4a9d-8ca2-a54c40e80e3e',
+)
+[ info ] [ PARAM ] array (
+  '/index_phpapi/Index/queryRank' => '',
+  'param' => 
+  array (
+    'token' => '',
+    'sort' => '',
+  ),
+)
+[ info ] [ RUN ] app\api\controller\Index->queryRank[ D:\WWW\forum\application\api\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.050000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_article` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `cms_article` ORDER BY reading DESC [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2018-04-03T09:19:59+08:00 ] ::1 ::1 POST /index.phpapi/Index/queryLink
+[ log ] localhost:90/index.phpapi/Index/queryLink [运行时间：1.111000s][吞吐率：0.90req/s] [内存消耗：2,219.77kb] [文件加载：47]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Index',
+    2 => 'queryLink',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:90',
+  'connection' => 'keep-alive',
+  'content-length' => '32',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:90',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/json;charset=UTF-8',
+  'referer' => 'http://localhost:90/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Webstorm-a327319a=a77430c4-efbc-4a9d-8ca2-a54c40e80e3e',
+)
+[ info ] [ PARAM ] array (
+  '/index_phpapi/Index/queryLink' => '',
+  'param' => 
+  array (
+    'token' => '',
+    'sort' => '',
+  ),
+)
+[ info ] [ RUN ] app\api\controller\Index->queryLink[ D:\WWW\forum\application\api\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.059000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_link` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `cms_link` [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-04-03T09:19:59+08:00 ] ::1 ::1 POST /index.phpapi/Index/allList
+[ log ] localhost:90/index.phpapi/Index/allList [运行时间：1.113000s][吞吐率：0.90req/s] [内存消耗：2,231.25kb] [文件加载：47]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Index',
+    2 => 'allList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:90',
+  'connection' => 'keep-alive',
+  'content-length' => '32',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:90',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/json;charset=UTF-8',
+  'referer' => 'http://localhost:90/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Webstorm-a327319a=a77430c4-efbc-4a9d-8ca2-a54c40e80e3e',
+)
+[ info ] [ PARAM ] array (
+  '/index_phpapi/Index/allList' => '',
+  'param' => 
+  array (
+    'token' => '',
+    'sort' => '',
+  ),
+)
+[ info ] [ RUN ] app\api\controller\Index->allList[ D:\WWW\forum\application\api\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.050000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_classification` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `cms_classification` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_article` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `cms_article` WHERE  `status` = 0 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_comment` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT `aid`,count(id) as sum FROM `cms_comment` WHERE  `aid` = 26 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `aid`,count(id) as sum FROM `cms_comment` WHERE  `aid` = 25 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `aid`,count(id) as sum FROM `cms_comment` WHERE  `aid` = 24 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2018-04-03T09:20:10+08:00 ] ::1 ::1 POST /index.phpapi/Login/login
+[ log ] localhost:90/index.phpapi/Login/login [运行时间：1.040000s][吞吐率：0.96req/s] [内存消耗：2,294.42kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:90',
+  'connection' => 'keep-alive',
+  'content-length' => '70',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:90',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/json;charset=UTF-8',
+  'referer' => 'http://localhost:90/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Webstorm-a327319a=a77430c4-efbc-4a9d-8ca2-a54c40e80e3e',
+)
+[ info ] [ PARAM ] array (
+  '/index_phpapi/Login/login' => '',
+  'param' => 
+  array (
+    'username' => 'admin',
+    'password' => 'admin',
+    'token' => '',
+    'sort' => '',
+  ),
+)
+[ info ] [ RUN ] app\api\controller\Login->login[ D:\WWW\forum\application\api\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.000000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_user` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT `id`,`password` FROM `cms_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-04-03T09:20:12+08:00 ] ::1 ::1 POST /index.phpapi/Admins/query_message
+[ log ] localhost:90/index.phpapi/Admins/query_message [运行时间：1.038000s][吞吐率：0.96req/s] [内存消耗：2,524.41kb] [文件加载：49]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Admins',
+    2 => 'query_message',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:90',
+  'connection' => 'keep-alive',
+  'content-length' => '80',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:90',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/json;charset=UTF-8',
+  'referer' => 'http://localhost:90/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Webstorm-a327319a=a77430c4-efbc-4a9d-8ca2-a54c40e80e3e',
+)
+[ info ] [ PARAM ] array (
+  '/index_phpapi/Admins/query_message' => '',
+  'param' => 
+  array (
+    'token' => 'A7mF5fOwo4PlzXzaL4HdTjAflaVPF8lDUKK0T0u7pzM=',
+    'sort' => '886343',
+  ),
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Admins->query_message[ D:\WWW\forum\application\api\controller\Admins.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.001000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_message` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `cms_message` WHERE  `uid` = '1' [ RunTime:0.001000s ]
+
+---------------------------------------------------------------

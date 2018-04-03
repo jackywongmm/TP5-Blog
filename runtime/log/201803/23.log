@@ -1,0 +1,3087 @@
+[ 2018-03-23T14:54:23+08:00 ] ::1 ::1 POST /api/Index/comment
+[ log ] localhost:90/api/Index/comment [运行时间：1.150000s][吞吐率：0.87req/s] [内存消耗：2,101.50kb] [文件加载：47]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Index',
+    2 => 'comment',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '528',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=75i3h1ee63o092fejdvu0q2pq6',
+  'host' => 'localhost:90',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => '7509b07e-21c4-433d-91b1-a2c684bfb4a5',
+  'cache-control' => 'no-cache',
+  'content-type' => 'multipart/form-data; boundary=--------------------------286058963921837917874187',
+)
+[ info ] [ PARAM ] array (
+  '/api/Index/comment' => '',
+  'param' => 
+  array (
+    'aid' => '1',
+    'name' => '李四',
+    'comment' => '很好',
+    'email' => '123456789@qq.com',
+  ),
+)
+[ info ] [ RUN ] app\api\controller\Index->comment[ D:\WWW\forum\application\api\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.018000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_comment` [ RunTime:0.025000s ]
+[ sql ] [ SQL ] INSERT INTO `cms_comment` (`aid` , `name` , `comment` , `email` , `createTime`) VALUES (1 , '李四' , '很好' , '123456789@qq.com' , '2018-03-23 14:54;22') [ RunTime:0.003000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T14:58:08+08:00 ] ::1 ::1 POST /api/Index/comment
+[ log ] localhost:90/api/Index/comment [运行时间：0.081000s][吞吐率：12.35req/s] [内存消耗：1,516.55kb] [文件加载：46]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Index',
+    2 => 'comment',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '430',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=75i3h1ee63o092fejdvu0q2pq6',
+  'host' => 'localhost:90',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => '053da30e-ede0-4e4a-b867-4fabfcf6a03e',
+  'cache-control' => 'no-cache',
+  'content-type' => 'multipart/form-data; boundary=--------------------------539779333494109166539405',
+)
+[ info ] [ PARAM ] array (
+  '/api/Index/comment' => '',
+  'param' => 
+  array (
+    'name' => '王五',
+    'comment' => '今天天气很好',
+    'email' => '123456789@qq.com',
+  ),
+)
+[ info ] [ RUN ] app\api\controller\Index->comment[ D:\WWW\forum\application\api\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: aid[D:\WWW\forum\application\api\controller\Index.php:29]
+
+---------------------------------------------------------------
+[ 2018-03-23T14:58:23+08:00 ] ::1 ::1 POST /api/Index/leaving_message
+[ log ] localhost:90/api/Index/leaving_message [运行时间：1.115000s][吞吐率：0.90req/s] [内存消耗：2,100.35kb] [文件加载：47]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Index',
+    2 => 'leaving_message',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '430',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=75i3h1ee63o092fejdvu0q2pq6',
+  'host' => 'localhost:90',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => '6825131d-e583-45dd-bb72-fa126091e978',
+  'cache-control' => 'no-cache',
+  'content-type' => 'multipart/form-data; boundary=--------------------------016255028290608184812625',
+)
+[ info ] [ PARAM ] array (
+  '/api/Index/leaving_message' => '',
+  'param' => 
+  array (
+    'name' => '王五',
+    'comment' => '今天天气很好',
+    'email' => '123456789@qq.com',
+  ),
+)
+[ info ] [ RUN ] app\api\controller\Index->leaving_message[ D:\WWW\forum\application\api\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.003000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_leaving_message` [ RunTime:0.024000s ]
+[ sql ] [ SQL ] INSERT INTO `cms_leaving_message` (`name` , `email` , `comment` , `createTime`) VALUES ('王五' , '123456789@qq.com' , '今天天气很好' , '2018-03-23 14:58;22') [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T15:00:41+08:00 ] ::1 ::1 POST /api/Index/queryComment
+[ log ] localhost:90/api/Index/queryComment [运行时间：1.123000s][吞吐率：0.89req/s] [内存消耗：2,103.21kb] [文件加载：47]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Index',
+    2 => 'queryComment',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '166',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=75i3h1ee63o092fejdvu0q2pq6',
+  'host' => 'localhost:90',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => 'f056a71b-045e-4c7a-80f2-20138a605831',
+  'cache-control' => 'no-cache',
+  'content-type' => 'multipart/form-data; boundary=--------------------------671776340753890696271722',
+)
+[ info ] [ PARAM ] array (
+  '/api/Index/queryComment' => '',
+  'param' => 
+  array (
+    'aid' => '1',
+  ),
+)
+[ info ] [ RUN ] app\api\controller\Index->queryComment[ D:\WWW\forum\application\api\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.025000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_comment` [ RunTime:0.020000s ]
+[ sql ] [ SQL ] SELECT * FROM `cms_comment` WHERE  `aid` = 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T15:03:07+08:00 ] ::1 ::1 POST /api/Index/queryClassification
+[ log ] localhost:90/api/Index/queryClassification [运行时间：1.137000s][吞吐率：0.88req/s] [内存消耗：2,098.61kb] [文件加载：47]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Index',
+    2 => 'queryClassification',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=75i3h1ee63o092fejdvu0q2pq6',
+  'host' => 'localhost:90',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => '0e335f41-472a-4c0c-bc57-a3580076d74a',
+  'cache-control' => 'no-cache',
+  'content-type' => 'multipart/form-data; boundary=--------------------------867790598323362065268155',
+)
+[ info ] [ PARAM ] array (
+  '/api/Index/queryClassification' => '',
+)
+[ info ] [ RUN ] app\api\controller\Index->queryClassification[ D:\WWW\forum\application\api\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.022000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_classification` [ RunTime:0.021000s ]
+[ sql ] [ SQL ] SELECT * FROM `cms_classification` [ RunTime:0.003000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T15:05:15+08:00 ] ::1 ::1 POST /api/Index/queryArticle
+[ log ] localhost:90/api/Index/queryArticle [运行时间：1.121000s][吞吐率：0.89req/s] [内存消耗：2,105.62kb] [文件加载：47]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Index',
+    2 => 'queryArticle',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '166',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=75i3h1ee63o092fejdvu0q2pq6',
+  'host' => 'localhost:90',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => '6dd3db9d-8c13-4ca2-b1f9-07a6e746f6c2',
+  'cache-control' => 'no-cache',
+  'content-type' => 'multipart/form-data; boundary=--------------------------147698699199129381756226',
+)
+[ info ] [ PARAM ] array (
+  '/api/Index/queryArticle' => '',
+  'param' => 
+  array (
+    'fid' => '1',
+  ),
+)
+[ info ] [ RUN ] app\api\controller\Index->queryArticle[ D:\WWW\forum\application\api\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.012000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_article` [ RunTime:0.023000s ]
+[ sql ] [ SQL ] SELECT `a`.*,count(c.id) as sum FROM `cms_article` `a` INNER JOIN `cms_comment` `c` ON `c`.`aid`=`a`.`id` WHERE  `a`.`status` = 0  AND `a`.`fid` = '1' ORDER BY a.reading DESC [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T15:12:18+08:00 ] ::1 ::1 POST /api/Index/text
+[ log ] localhost:90/api/Index/text [运行时间：0.058000s][吞吐率：17.24req/s] [内存消耗：1,442.04kb] [文件加载：41]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Index',
+    2 => 'text',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '2053',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=75i3h1ee63o092fejdvu0q2pq6',
+  'host' => 'localhost:90',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => 'a3f09cc1-1838-4408-b155-c652f4bd05bb',
+  'cache-control' => 'no-cache',
+  'content-type' => 'multipart/form-data; boundary=--------------------------225183262341189792821966',
+)
+[ info ] [ PARAM ] array (
+  '/api/Index/text' => '',
+  'param' => 
+  array (
+    'user_id' => '38',
+    'month' => '2018-03-01',
+    'beOnDuty' => '26',
+    'sickLeave' => '1',
+    'compassionateLeave' => '1',
+    'meal' => '1',
+    'commission' => '0',
+    'reward' => '0',
+    'fine' => '0',
+    'trafficAllowance' => '100',
+    'communicationSubsidy' => '100',
+    'basic' => '2000',
+    'achievements' => '1000',
+    'post' => '1000',
+    'userName' => '\'王玉梅\'',
+    'punish' => '0',
+    'id' => '1',
+  ),
+)
+[ info ] [ RUN ] app\api\controller\Index->text[ D:\WWW\forum\application\api\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-03-23T15:12:56+08:00 ] ::1 ::1 POST /api/Login/login
+[ log ] localhost:90/api/Login/login [运行时间：1.145000s][吞吐率：0.87req/s] [内存消耗：2,113.48kb] [文件加载：47]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '294',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=75i3h1ee63o092fejdvu0q2pq6',
+  'host' => 'localhost:90',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => '4ef831c3-80cf-4ead-9ece-bf63df5bc86c',
+  'cache-control' => 'no-cache',
+  'content-type' => 'multipart/form-data; boundary=--------------------------894932297832344950706822',
+)
+[ info ] [ PARAM ] array (
+  '/api/Login/login' => '',
+  'param' => 
+  array (
+    'username' => 'admin',
+    'password' => 'admin',
+  ),
+)
+[ info ] [ RUN ] app\api\controller\Login->login[ D:\WWW\forum\application\api\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.026000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_user` [ RunTime:0.021000s ]
+[ sql ] [ SQL ] SELECT `id`,`password` FROM `cms_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T15:13:55+08:00 ] ::1 ::1 POST /api/Index/text
+[ log ] localhost:90/api/Index/text [运行时间：0.053000s][吞吐率：18.87req/s] [内存消耗：1,442.04kb] [文件加载：41]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Index',
+    2 => 'text',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '2053',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=75i3h1ee63o092fejdvu0q2pq6',
+  'host' => 'localhost:90',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => '81d95dc8-7a2c-4af5-af5a-a1ef158656d0',
+  'cache-control' => 'no-cache',
+  'content-type' => 'multipart/form-data; boundary=--------------------------894648148567090855336715',
+)
+[ info ] [ PARAM ] array (
+  '/api/Index/text' => '',
+  'param' => 
+  array (
+    'user_id' => '38',
+    'month' => '2018-03-01',
+    'beOnDuty' => '26',
+    'sickLeave' => '1',
+    'compassionateLeave' => '1',
+    'meal' => '1',
+    'commission' => '0',
+    'reward' => '0',
+    'fine' => '0',
+    'trafficAllowance' => '100',
+    'communicationSubsidy' => '100',
+    'basic' => '2000',
+    'achievements' => '1000',
+    'post' => '1000',
+    'userName' => '\'王玉梅\'',
+    'punish' => '0',
+    'id' => '1',
+  ),
+)
+[ info ] [ RUN ] app\api\controller\Index->text[ D:\WWW\forum\application\api\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-03-23T15:15:02+08:00 ] ::1 ::1 POST /api/Login/login
+[ log ] localhost:90/api/Login/login [运行时间：1.155000s][吞吐率：0.87req/s] [内存消耗：2,184.11kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '294',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=75i3h1ee63o092fejdvu0q2pq6',
+  'host' => 'localhost:90',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => '6c149d7c-332c-4919-9b6e-a6f13d9e70b4',
+  'cache-control' => 'no-cache',
+  'content-type' => 'multipart/form-data; boundary=--------------------------391232412773170470916974',
+)
+[ info ] [ PARAM ] array (
+  '/api/Login/login' => '',
+  'param' => 
+  array (
+    'username' => 'admin',
+    'password' => 'admin',
+  ),
+)
+[ info ] [ RUN ] app\api\controller\Login->login[ D:\WWW\forum\application\api\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.022000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_user` [ RunTime:0.020000s ]
+[ sql ] [ SQL ] SELECT `id`,`password` FROM `cms_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.003000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T15:15:20+08:00 ] ::1 ::1 POST /api/Login/login
+[ log ] localhost:90/api/Login/login [运行时间：1.140000s][吞吐率：0.88req/s] [内存消耗：2,183.80kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '294',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=75i3h1ee63o092fejdvu0q2pq6',
+  'host' => 'localhost:90',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => 'edb022a0-9f48-4ed1-93e2-f474c8310086',
+  'cache-control' => 'no-cache',
+  'content-type' => 'multipart/form-data; boundary=--------------------------572927976726165899719501',
+)
+[ info ] [ PARAM ] array (
+  '/api/Login/login' => '',
+  'param' => 
+  array (
+    'username' => 'admin',
+    'password' => 'admin',
+  ),
+)
+[ info ] [ RUN ] app\api\controller\Login->login[ D:\WWW\forum\application\api\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.025000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_user` [ RunTime:0.019000s ]
+[ sql ] [ SQL ] SELECT `id`,`password` FROM `cms_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T15:16:00+08:00 ] ::1 ::1 POST /api/Admins/query_message
+[ log ] localhost:90/api/Admins/query_message [运行时间：1.133000s][吞吐率：0.88req/s] [内存消耗：2,512.79kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Admins',
+    2 => 'query_message',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '437',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=75i3h1ee63o092fejdvu0q2pq6',
+  'host' => 'localhost:90',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => 'd160f00a-c2e2-47f8-8418-7c6d401d18c4',
+  'cache-control' => 'no-cache',
+  'content-type' => 'multipart/form-data; boundary=--------------------------882182045298981538122966',
+)
+[ info ] [ PARAM ] array (
+  '/api/Admins/query_message' => '',
+  'param' => 
+  array (
+    'fid' => '1',
+    'token' => 'A7mF5fOwo4PlzXzaL4HdTsPr7enr9lw/+CzrykJPjxw=',
+    'sort' => '619787',
+  ),
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Admins->query_message[ D:\WWW\forum\application\api\controller\Admins.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.027000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_message` [ RunTime:0.021000s ]
+[ sql ] [ SQL ] SELECT * FROM `cms_message` WHERE  `uid` = '1' [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T15:16:12+08:00 ] ::1 ::1 POST /api/Admins/query_message
+[ log ] localhost:90/api/Admins/query_message [运行时间：1.137000s][吞吐率：0.88req/s] [内存消耗：2,512.79kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Admins',
+    2 => 'query_message',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '436',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=75i3h1ee63o092fejdvu0q2pq6',
+  'host' => 'localhost:90',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => 'cb7dfde5-83f3-41e8-820f-2a422db158f0',
+  'cache-control' => 'no-cache',
+  'content-type' => 'multipart/form-data; boundary=--------------------------700276830007563728972942',
+)
+[ info ] [ PARAM ] array (
+  '/api/Admins/query_message' => '',
+  'param' => 
+  array (
+    'fid' => '',
+    'token' => 'A7mF5fOwo4PlzXzaL4HdTsPr7enr9lw/+CzrykJPjxw=',
+    'sort' => '619787',
+  ),
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Admins->query_message[ D:\WWW\forum\application\api\controller\Admins.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.015000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_message` [ RunTime:0.021000s ]
+[ sql ] [ SQL ] SELECT * FROM `cms_message` WHERE  `uid` = '1' [ RunTime:0.003000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T15:16:38+08:00 ] ::1 ::1 POST /api/Admins/query_message
+[ log ] localhost:90/api/Admins/query_message [运行时间：1.131000s][吞吐率：0.88req/s] [内存消耗：2,513.00kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Admins',
+    2 => 'query_message',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '437',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=75i3h1ee63o092fejdvu0q2pq6',
+  'host' => 'localhost:90',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => '6856a238-1949-43e3-a8e8-384bfd16572e',
+  'cache-control' => 'no-cache',
+  'content-type' => 'multipart/form-data; boundary=--------------------------066997958923727108486846',
+)
+[ info ] [ PARAM ] array (
+  '/api/Admins/query_message' => '',
+  'param' => 
+  array (
+    'fid' => '1',
+    'token' => 'A7mF5fOwo4PlzXzaL4HdTsPr7enr9lw/+CzrykJPjxw=',
+    'sort' => '619787',
+  ),
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Admins->query_message[ D:\WWW\forum\application\api\controller\Admins.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.027000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_message` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] SELECT * FROM `cms_message` WHERE  `uid` = '1' [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T15:17:20+08:00 ] ::1 ::1 POST /api/Admins/query_message
+[ log ] localhost:90/api/Admins/query_message [运行时间：1.135000s][吞吐率：0.88req/s] [内存消耗：2,513.22kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Admins',
+    2 => 'query_message',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '437',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=75i3h1ee63o092fejdvu0q2pq6',
+  'host' => 'localhost:90',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => '0542b8c1-d9ea-4054-8f4d-17db8523d75f',
+  'cache-control' => 'no-cache',
+  'content-type' => 'multipart/form-data; boundary=--------------------------965260233848788420449068',
+)
+[ info ] [ PARAM ] array (
+  '/api/Admins/query_message' => '',
+  'param' => 
+  array (
+    'fid' => '1',
+    'token' => 'A7mF5fOwo4PlzXzaL4HdTsPr7enr9lw/+CzrykJPjxw=',
+    'sort' => '619787',
+  ),
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Admins->query_message[ D:\WWW\forum\application\api\controller\Admins.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.022000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_message` [ RunTime:0.021000s ]
+[ sql ] [ SQL ] SELECT * FROM `cms_message` WHERE  `uid` = '1' [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T15:19:05+08:00 ] ::1 ::1 POST /api/Admins/add_message
+[ log ] localhost:90/api/Admins/add_message [运行时间：1.136000s][吞吐率：0.88req/s] [内存消耗：2,510.42kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Admins',
+    2 => 'add_message',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '556',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=75i3h1ee63o092fejdvu0q2pq6',
+  'host' => 'localhost:90',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => '6363cfab-e75e-455c-9a25-988d636a9bfd',
+  'cache-control' => 'no-cache',
+  'content-type' => 'multipart/form-data; boundary=--------------------------380259230256453111756519',
+)
+[ info ] [ PARAM ] array (
+  '/api/Admins/add_message' => '',
+  'param' => 
+  array (
+    'token' => 'A7mF5fOwo4PlzXzaL4HdTsPr7enr9lw/+CzrykJPjxw=',
+    'sort' => '619787',
+    'key' => '性别',
+    'value' => '男',
+  ),
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Admins->add_message[ D:\WWW\forum\application\api\controller\Admins.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.024000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_message` [ RunTime:0.018000s ]
+[ sql ] [ SQL ] INSERT INTO `cms_message` (`key` , `value` , `uid`) VALUES ('性别' , '男' , '1') [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T15:23:06+08:00 ] ::1 ::1 POST /api/Admins/update_message
+[ log ] localhost:90/api/Admins/update_message [运行时间：1.151000s][吞吐率：0.87req/s] [内存消耗：2,511.51kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Admins',
+    2 => 'update_message',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '665',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=75i3h1ee63o092fejdvu0q2pq6',
+  'host' => 'localhost:90',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => 'dc1933f3-decb-4bed-a43d-4698e6535cae',
+  'cache-control' => 'no-cache',
+  'content-type' => 'multipart/form-data; boundary=--------------------------877783350807492660382101',
+)
+[ info ] [ PARAM ] array (
+  '/api/Admins/update_message' => '',
+  'param' => 
+  array (
+    'id' => '4',
+    'token' => 'A7mF5fOwo4PlzXzaL4HdTsPr7enr9lw/+CzrykJPjxw=',
+    'sort' => '619787',
+    'key' => '性别',
+    'value' => '男',
+  ),
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Admins->update_message[ D:\WWW\forum\application\api\controller\Admins.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.025000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_message` [ RunTime:0.022000s ]
+[ sql ] [ SQL ] UPDATE `cms_message`  SET `key`='性别',`value`='男'  WHERE  `id` = 4 [ RunTime:0.003000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T15:23:45+08:00 ] ::1 ::1 POST /api/Admins/update_message
+[ log ] localhost:90/api/Admins/update_message [运行时间：1.144000s][吞吐率：0.87req/s] [内存消耗：2,511.55kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Admins',
+    2 => 'update_message',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '665',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=75i3h1ee63o092fejdvu0q2pq6',
+  'host' => 'localhost:90',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => '738db072-02b4-4679-960c-36547546be02',
+  'cache-control' => 'no-cache',
+  'content-type' => 'multipart/form-data; boundary=--------------------------303898807365686288787332',
+)
+[ info ] [ PARAM ] array (
+  '/api/Admins/update_message' => '',
+  'param' => 
+  array (
+    'id' => '4',
+    'token' => 'A7mF5fOwo4PlzXzaL4HdTsPr7enr9lw/+CzrykJPjxw=',
+    'sort' => '619787',
+    'key' => '性别',
+    'value' => '女',
+  ),
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Admins->update_message[ D:\WWW\forum\application\api\controller\Admins.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.018000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_message` [ RunTime:0.016000s ]
+[ sql ] [ SQL ] UPDATE `cms_message`  SET `key`='性别',`value`='女'  WHERE  `id` = 4 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T15:25:07+08:00 ] ::1 ::1 POST /api/Admins/delete_message
+[ log ] localhost:90/api/Admins/delete_message [运行时间：0.078000s][吞吐率：12.82req/s] [内存消耗：1,566.93kb] [文件加载：47]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Admins',
+    2 => 'delete_message',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '165',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=75i3h1ee63o092fejdvu0q2pq6',
+  'host' => 'localhost:90',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => '27c7673a-ba8a-4f97-aef6-8e4e264333a3',
+  'cache-control' => 'no-cache',
+  'content-type' => 'multipart/form-data; boundary=--------------------------380698291489785815799232',
+)
+[ info ] [ PARAM ] array (
+  '/api/Admins/delete_message' => '',
+  'param' => 
+  array (
+    'id' => '4',
+  ),
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: token[D:\WWW\forum\application\common\controller\HomeBase.php:19]
+
+---------------------------------------------------------------
+[ 2018-03-23T15:25:14+08:00 ] ::1 ::1 POST /api/Admins/delete_message
+[ log ] localhost:90/api/Admins/delete_message [运行时间：1.128000s][吞吐率：0.89req/s] [内存消耗：2,509.91kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Admins',
+    2 => 'delete_message',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '436',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=75i3h1ee63o092fejdvu0q2pq6',
+  'host' => 'localhost:90',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => 'a7106451-ba86-4785-9674-99e134438534',
+  'cache-control' => 'no-cache',
+  'content-type' => 'multipart/form-data; boundary=--------------------------280272238449442643493213',
+)
+[ info ] [ PARAM ] array (
+  '/api/Admins/delete_message' => '',
+  'param' => 
+  array (
+    'id' => '4',
+    'token' => 'A7mF5fOwo4PlzXzaL4HdTsPr7enr9lw/+CzrykJPjxw=',
+    'sort' => '619787',
+  ),
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Admins->delete_message[ D:\WWW\forum\application\api\controller\Admins.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.018000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_message` [ RunTime:0.021000s ]
+[ sql ] [ SQL ] DELETE FROM `cms_message`    WHERE  `id` = 4 [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T15:26:56+08:00 ] ::1 ::1 POST /api/Admins/query_comment
+[ log ] localhost:90/api/Admins/query_comment [运行时间：1.202000s][吞吐率：0.83req/s] [内存消耗：2,542.38kb] [文件加载：58]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Admins',
+    2 => 'query_comment',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '327',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=75i3h1ee63o092fejdvu0q2pq6',
+  'host' => 'localhost:90',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => 'ba6918e2-a102-4298-b645-c948d7d22787',
+  'cache-control' => 'no-cache',
+  'content-type' => 'multipart/form-data; boundary=--------------------------344636235133932815926883',
+)
+[ info ] [ PARAM ] array (
+  '/api/Admins/query_comment' => '',
+  'param' => 
+  array (
+    'token' => 'A7mF5fOwo4PlzXzaL4HdTsPr7enr9lw/+CzrykJPjxw=',
+    'sort' => '619787',
+  ),
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Admins->query_comment[ D:\WWW\forum\application\api\controller\Admins.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.017000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_comment` [ RunTime:0.021000s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'a.aid' in 'on clause'[D:\WWW\forum\thinkphp\library\think\db\Connection.php:399]
+
+---------------------------------------------------------------
+[ 2018-03-23T15:28:01+08:00 ] ::1 ::1 POST /api/Admins/query_comment
+[ log ] localhost:90/api/Admins/query_comment [运行时间：1.167000s][吞吐率：0.86req/s] [内存消耗：2,514.03kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Admins',
+    2 => 'query_comment',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '327',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=75i3h1ee63o092fejdvu0q2pq6',
+  'host' => 'localhost:90',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => 'e94206fb-f0d2-435d-8af3-e0451abe1901',
+  'cache-control' => 'no-cache',
+  'content-type' => 'multipart/form-data; boundary=--------------------------014634148264309122904706',
+)
+[ info ] [ PARAM ] array (
+  '/api/Admins/query_comment' => '',
+  'param' => 
+  array (
+    'token' => 'A7mF5fOwo4PlzXzaL4HdTsPr7enr9lw/+CzrykJPjxw=',
+    'sort' => '619787',
+  ),
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Admins->query_comment[ D:\WWW\forum\application\api\controller\Admins.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.031000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_comment` [ RunTime:0.022000s ]
+[ sql ] [ SQL ] SELECT `c`.*,a.title as title FROM `cms_comment` `c` INNER JOIN `cms_article` `a` ON `a`.`id`=`c`.`aid` ORDER BY c.id DESC [ RunTime:0.003000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T15:30:47+08:00 ] ::1 ::1 POST /api/Admins/delete_comment
+[ log ] localhost:90/api/Admins/delete_comment [运行时间：1.157000s][吞吐率：0.86req/s] [内存消耗：2,510.48kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Admins',
+    2 => 'delete_comment',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '436',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=75i3h1ee63o092fejdvu0q2pq6',
+  'host' => 'localhost:90',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => '04e6f2d3-08c9-4698-a61e-b8c61f8650e6',
+  'cache-control' => 'no-cache',
+  'content-type' => 'multipart/form-data; boundary=--------------------------866240865623861768551864',
+)
+[ info ] [ PARAM ] array (
+  '/api/Admins/delete_comment' => '',
+  'param' => 
+  array (
+    'id' => '2',
+    'token' => 'A7mF5fOwo4PlzXzaL4HdTsPr7enr9lw/+CzrykJPjxw=',
+    'sort' => '619787',
+  ),
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Admins->delete_comment[ D:\WWW\forum\application\api\controller\Admins.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.016000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_comment` [ RunTime:0.021000s ]
+[ sql ] [ SQL ] DELETE FROM `cms_comment`    WHERE  `id` = 2 [ RunTime:0.003000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T15:32:08+08:00 ] ::1 ::1 POST /api/Admins/query_article
+[ log ] localhost:90/api/Admins/query_article [运行时间：1.125000s][吞吐率：0.89req/s] [内存消耗：2,514.23kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Admins',
+    2 => 'query_article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '436',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=75i3h1ee63o092fejdvu0q2pq6',
+  'host' => 'localhost:90',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => 'e4682585-b492-487c-a0fa-b3df8e80a466',
+  'cache-control' => 'no-cache',
+  'content-type' => 'multipart/form-data; boundary=--------------------------814500416399430830529445',
+)
+[ info ] [ PARAM ] array (
+  '/api/Admins/query_article' => '',
+  'param' => 
+  array (
+    'id' => '2',
+    'token' => 'A7mF5fOwo4PlzXzaL4HdTsPr7enr9lw/+CzrykJPjxw=',
+    'sort' => '619787',
+  ),
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Admins->query_article[ D:\WWW\forum\application\api\controller\Admins.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.020000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_article` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`title`,`a`.`name`,`a`.`createTime`,`c`.`name` FROM `cms_article` `a` INNER JOIN `cms_classification` `c` ON `c`.`id`=`a`.`fid` ORDER BY a.id DESC [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T15:36:22+08:00 ] ::1 ::1 POST /api/Admins/delete_article
+[ log ] localhost:90/api/Admins/delete_article [运行时间：1.156000s][吞吐率：0.87req/s] [内存消耗：2,512.23kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Admins',
+    2 => 'delete_article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '436',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=75i3h1ee63o092fejdvu0q2pq6',
+  'host' => 'localhost:90',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => '9747a320-109d-461c-8e80-326e4a20efc0',
+  'cache-control' => 'no-cache',
+  'content-type' => 'multipart/form-data; boundary=--------------------------856528112890674274914914',
+)
+[ info ] [ PARAM ] array (
+  '/api/Admins/delete_article' => '',
+  'param' => 
+  array (
+    'id' => '2',
+    'token' => 'A7mF5fOwo4PlzXzaL4HdTsPr7enr9lw/+CzrykJPjxw=',
+    'sort' => '619787',
+  ),
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Admins->delete_article[ D:\WWW\forum\application\api\controller\Admins.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.022000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_article` [ RunTime:0.022000s ]
+[ sql ] [ SQL ] UPDATE `cms_article`  SET `status`=1  WHERE  `id` = 2 [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T15:37:11+08:00 ] ::1 ::1 POST /api/Admins/delete_article
+[ log ] localhost:90/api/Admins/delete_article [运行时间：0.061000s][吞吐率：16.39req/s] [内存消耗：1,265.73kb] [文件加载：38]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Admins',
+    2 => 'delete_article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '436',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=75i3h1ee63o092fejdvu0q2pq6',
+  'host' => 'localhost:90',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => '94699842-06e1-4020-a071-c8b05b6aa603',
+  'cache-control' => 'no-cache',
+  'content-type' => 'multipart/form-data; boundary=--------------------------553984339563691935745537',
+)
+[ info ] [ PARAM ] array (
+  '/api/Admins/delete_article' => '',
+  'param' => 
+  array (
+    'id' => '1',
+    'token' => 'A7mF5fOwo4PlzXzaL4HdTsPr7enr9lw/+CzrykJPjxw=',
+    'sort' => '619787',
+  ),
+)
+[ info ] [ LOG ] INIT File
+[ error ] [4]语法错误: unexpected ')', expecting ']'[D:\WWW\forum\application\api\controller\Admins.php:134]
+
+---------------------------------------------------------------
+[ 2018-03-23T15:37:26+08:00 ] ::1 ::1 POST /api/Admins/delete_article
+[ log ] localhost:90/api/Admins/delete_article [运行时间：1.122000s][吞吐率：0.89req/s] [内存消耗：2,512.18kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Admins',
+    2 => 'delete_article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '436',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=75i3h1ee63o092fejdvu0q2pq6',
+  'host' => 'localhost:90',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => 'd63bbb4e-42aa-41ee-9931-5eab31a25628',
+  'cache-control' => 'no-cache',
+  'content-type' => 'multipart/form-data; boundary=--------------------------875763494913158281010641',
+)
+[ info ] [ PARAM ] array (
+  '/api/Admins/delete_article' => '',
+  'param' => 
+  array (
+    'id' => '1',
+    'token' => 'A7mF5fOwo4PlzXzaL4HdTsPr7enr9lw/+CzrykJPjxw=',
+    'sort' => '619787',
+  ),
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Admins->delete_article[ D:\WWW\forum\application\api\controller\Admins.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.016000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_article` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] UPDATE `cms_article`  SET `status`=1  WHERE  `id` = 1 [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T15:38:53+08:00 ] ::1 ::1 POST /api/Admins/query_leaving_message
+[ log ] localhost:90/api/Admins/query_leaving_message [运行时间：1.142000s][吞吐率：0.88req/s] [内存消耗：2,512.52kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Admins',
+    2 => 'query_leaving_message',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '436',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=75i3h1ee63o092fejdvu0q2pq6',
+  'host' => 'localhost:90',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => '3b70f1e5-824e-45fd-8961-c1d6bec2eaca',
+  'cache-control' => 'no-cache',
+  'content-type' => 'multipart/form-data; boundary=--------------------------065465716275178256085075',
+)
+[ info ] [ PARAM ] array (
+  '/api/Admins/query_leaving_message' => '',
+  'param' => 
+  array (
+    'id' => '1',
+    'token' => 'A7mF5fOwo4PlzXzaL4HdTsPr7enr9lw/+CzrykJPjxw=',
+    'sort' => '619787',
+  ),
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Admins->query_leaving_message[ D:\WWW\forum\application\api\controller\Admins.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.010000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_leaving_message` [ RunTime:0.022000s ]
+[ sql ] [ SQL ] SELECT * FROM `cms_leaving_message` [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T15:41:11+08:00 ] ::1 ::1 POST /api/Admins/delete_leaving_message
+[ log ] localhost:90/api/Admins/delete_leaving_message [运行时间：1.139000s][吞吐率：0.88req/s] [内存消耗：2,510.24kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Admins',
+    2 => 'delete_leaving_message',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '436',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=75i3h1ee63o092fejdvu0q2pq6',
+  'host' => 'localhost:90',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => 'bb15ea3a-b17a-44bc-a0bc-50449241dcca',
+  'cache-control' => 'no-cache',
+  'content-type' => 'multipart/form-data; boundary=--------------------------134899851800906814422458',
+)
+[ info ] [ PARAM ] array (
+  '/api/Admins/delete_leaving_message' => '',
+  'param' => 
+  array (
+    'id' => '2',
+    'token' => 'A7mF5fOwo4PlzXzaL4HdTsPr7enr9lw/+CzrykJPjxw=',
+    'sort' => '619787',
+  ),
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Admins->delete_leaving_message[ D:\WWW\forum\application\api\controller\Admins.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.018000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_leaving_message` [ RunTime:0.018000s ]
+[ sql ] [ SQL ] DELETE FROM `cms_leaving_message`    WHERE  `id` = 2 [ RunTime:0.003000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T15:41:23+08:00 ] ::1 ::1 POST /api/Admins/delete_leaving_message
+[ log ] localhost:90/api/Admins/delete_leaving_message [运行时间：1.142000s][吞吐率：0.88req/s] [内存消耗：2,510.38kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Admins',
+    2 => 'delete_leaving_message',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '436',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=75i3h1ee63o092fejdvu0q2pq6',
+  'host' => 'localhost:90',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => '4a7bbe96-7af1-43f8-8c66-0b4c499d0ce0',
+  'cache-control' => 'no-cache',
+  'content-type' => 'multipart/form-data; boundary=--------------------------580591954702846357833814',
+)
+[ info ] [ PARAM ] array (
+  '/api/Admins/delete_leaving_message' => '',
+  'param' => 
+  array (
+    'id' => '2',
+    'token' => 'A7mF5fOwo4PlzXzaL4HdTsPr7enr9lw/+CzrykJPjxw=',
+    'sort' => '619787',
+  ),
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Admins->delete_leaving_message[ D:\WWW\forum\application\api\controller\Admins.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.022000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_leaving_message` [ RunTime:0.021000s ]
+[ sql ] [ SQL ] DELETE FROM `cms_leaving_message`    WHERE  `id` = 2 [ RunTime:0.004000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T15:41:54+08:00 ] ::1 ::1 POST /api/Admins/query_classification
+[ log ] localhost:90/api/Admins/query_classification [运行时间：1.107000s][吞吐率：0.90req/s] [内存消耗：2,510.15kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Admins',
+    2 => 'query_classification',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '436',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=75i3h1ee63o092fejdvu0q2pq6',
+  'host' => 'localhost:90',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => '0a207669-c0a1-4b07-a09b-d7bdabb92b00',
+  'cache-control' => 'no-cache',
+  'content-type' => 'multipart/form-data; boundary=--------------------------762313218280621832813071',
+)
+[ info ] [ PARAM ] array (
+  '/api/Admins/query_classification' => '',
+  'param' => 
+  array (
+    'id' => '2',
+    'token' => 'A7mF5fOwo4PlzXzaL4HdTsPr7enr9lw/+CzrykJPjxw=',
+    'sort' => '619787',
+  ),
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Admins->query_classification[ D:\WWW\forum\application\api\controller\Admins.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.013000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_classification` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `cms_classification` [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T15:43:00+08:00 ] ::1 ::1 POST /api/Admins/add_classification
+[ log ] localhost:90/api/Admins/add_classification [运行时间：1.131000s][吞吐率：0.88req/s] [内存消耗：2,508.44kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Admins',
+    2 => 'add_classification',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '555',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=75i3h1ee63o092fejdvu0q2pq6',
+  'host' => 'localhost:90',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => '245ea88d-59e1-400e-8a42-8626a84619d2',
+  'cache-control' => 'no-cache',
+  'content-type' => 'multipart/form-data; boundary=--------------------------239145626744935823066690',
+)
+[ info ] [ PARAM ] array (
+  '/api/Admins/add_classification' => '',
+  'param' => 
+  array (
+    'id' => '2',
+    'token' => 'A7mF5fOwo4PlzXzaL4HdTsPr7enr9lw/+CzrykJPjxw=',
+    'sort' => '619787',
+    'name' => '哈哈哈',
+  ),
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Admins->add_classification[ D:\WWW\forum\application\api\controller\Admins.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.022000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_classification` [ RunTime:0.019000s ]
+[ sql ] [ SQL ] INSERT INTO `cms_classification` (`name`) VALUES ('哈哈哈') [ RunTime:0.003000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T15:45:09+08:00 ] ::1 ::1 POST /api/Admins/update_classification
+[ log ] localhost:90/api/Admins/update_classification [运行时间：1.109000s][吞吐率：0.90req/s] [内存消耗：2,510.67kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Admins',
+    2 => 'update_classification',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '549',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=75i3h1ee63o092fejdvu0q2pq6',
+  'host' => 'localhost:90',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => 'dde4a690-6b87-4299-8689-c6f6c7fa611e',
+  'cache-control' => 'no-cache',
+  'content-type' => 'multipart/form-data; boundary=--------------------------579554466214119162472709',
+)
+[ info ] [ PARAM ] array (
+  '/api/Admins/update_classification' => '',
+  'param' => 
+  array (
+    'id' => '4',
+    'token' => 'A7mF5fOwo4PlzXzaL4HdTsPr7enr9lw/+CzrykJPjxw=',
+    'sort' => '619787',
+    'name' => '123',
+  ),
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Admins->update_classification[ D:\WWW\forum\application\api\controller\Admins.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.011000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_link` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] UPDATE `cms_link`  SET `name`='123'  WHERE  `id` = 4 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T15:45:39+08:00 ] ::1 ::1 POST /api/Admins/update_classification
+[ log ] localhost:90/api/Admins/update_classification [运行时间：1.113000s][吞吐率：0.90req/s] [内存消耗：2,510.48kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Admins',
+    2 => 'update_classification',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '549',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=75i3h1ee63o092fejdvu0q2pq6',
+  'host' => 'localhost:90',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => '6a10b840-165d-4b7e-b690-ef4b3b1947ba',
+  'cache-control' => 'no-cache',
+  'content-type' => 'multipart/form-data; boundary=--------------------------517781053045864000076851',
+)
+[ info ] [ PARAM ] array (
+  '/api/Admins/update_classification' => '',
+  'param' => 
+  array (
+    'id' => '4',
+    'token' => 'A7mF5fOwo4PlzXzaL4HdTsPr7enr9lw/+CzrykJPjxw=',
+    'sort' => '619787',
+    'name' => '123',
+  ),
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Admins->update_classification[ D:\WWW\forum\application\api\controller\Admins.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.012000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_classification` [ RunTime:0.018000s ]
+[ sql ] [ SQL ] UPDATE `cms_classification`  SET `name`='123'  WHERE  `id` = 4 [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T15:46:22+08:00 ] ::1 ::1 POST /api/Admins/delete_classification
+[ log ] localhost:90/api/Admins/delete_classification [运行时间：1.145000s][吞吐率：0.87req/s] [内存消耗：2,509.58kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Admins',
+    2 => 'delete_classification',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '549',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=75i3h1ee63o092fejdvu0q2pq6',
+  'host' => 'localhost:90',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => 'c56bb170-d749-4e8d-a578-b8199c3dfa52',
+  'cache-control' => 'no-cache',
+  'content-type' => 'multipart/form-data; boundary=--------------------------353990955807058435962316',
+)
+[ info ] [ PARAM ] array (
+  '/api/Admins/delete_classification' => '',
+  'param' => 
+  array (
+    'id' => '4',
+    'token' => 'A7mF5fOwo4PlzXzaL4HdTsPr7enr9lw/+CzrykJPjxw=',
+    'sort' => '619787',
+    'name' => '123',
+  ),
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Admins->delete_classification[ D:\WWW\forum\application\api\controller\Admins.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.022000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_classification` [ RunTime:0.021000s ]
+[ sql ] [ SQL ] DELETE FROM `cms_classification`    WHERE  `id` = 4 [ RunTime:0.003000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T15:47:45+08:00 ] ::1 ::1 POST /api/Admins/query_link
+[ log ] localhost:90/api/Admins/query_link [运行时间：1.110000s][吞吐率：0.90req/s] [内存消耗：2,510.46kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Admins',
+    2 => 'query_link',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '549',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=75i3h1ee63o092fejdvu0q2pq6',
+  'host' => 'localhost:90',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => '9f347014-9fec-4b51-a918-62e09218a37a',
+  'cache-control' => 'no-cache',
+  'content-type' => 'multipart/form-data; boundary=--------------------------647605253762877081831837',
+)
+[ info ] [ PARAM ] array (
+  '/api/Admins/query_link' => '',
+  'param' => 
+  array (
+    'id' => '4',
+    'token' => 'A7mF5fOwo4PlzXzaL4HdTsPr7enr9lw/+CzrykJPjxw=',
+    'sort' => '619787',
+    'name' => '123',
+  ),
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Admins->query_link[ D:\WWW\forum\application\api\controller\Admins.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.009000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_link` [ RunTime:0.021000s ]
+[ sql ] [ SQL ] SELECT * FROM `cms_link` [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T15:50:13+08:00 ] ::1 ::1 POST /api/Admins/add_link
+[ log ] localhost:90/api/Admins/add_link [运行时间：1.127000s][吞吐率：0.89req/s] [内存消耗：2,509.30kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Admins',
+    2 => 'add_link',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '664',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=75i3h1ee63o092fejdvu0q2pq6',
+  'host' => 'localhost:90',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => 'db081335-fc57-4a32-9243-b824a76551a3',
+  'cache-control' => 'no-cache',
+  'content-type' => 'multipart/form-data; boundary=--------------------------263238840370420734824235',
+)
+[ info ] [ PARAM ] array (
+  '/api/Admins/add_link' => '',
+  'param' => 
+  array (
+    'id' => '4',
+    'token' => 'A7mF5fOwo4PlzXzaL4HdTsPr7enr9lw/+CzrykJPjxw=',
+    'sort' => '619787',
+    'name' => '123',
+    'url' => '123123',
+  ),
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Admins->add_link[ D:\WWW\forum\application\api\controller\Admins.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.003000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_link` [ RunTime:0.022000s ]
+[ sql ] [ SQL ] INSERT INTO `cms_link` (`name` , `url`) VALUES ('123' , '123123') [ RunTime:0.004000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T15:51:42+08:00 ] ::1 ::1 POST /api/Admins/update_link
+[ log ] localhost:90/api/Admins/update_link [运行时间：1.133000s][吞吐率：0.88req/s] [内存消耗：2,511.19kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Admins',
+    2 => 'update_link',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '664',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=75i3h1ee63o092fejdvu0q2pq6',
+  'host' => 'localhost:90',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => '0a96a788-a03c-4160-a203-58eb26c5d8b8',
+  'cache-control' => 'no-cache',
+  'content-type' => 'multipart/form-data; boundary=--------------------------103531543501949793464551',
+)
+[ info ] [ PARAM ] array (
+  '/api/Admins/update_link' => '',
+  'param' => 
+  array (
+    'id' => '2',
+    'token' => 'A7mF5fOwo4PlzXzaL4HdTsPr7enr9lw/+CzrykJPjxw=',
+    'sort' => '619787',
+    'name' => '123',
+    'url' => '123123',
+  ),
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Admins->update_link[ D:\WWW\forum\application\api\controller\Admins.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.012000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_link` [ RunTime:0.021000s ]
+[ sql ] [ SQL ] UPDATE `cms_link`  SET `name`='123',`url`='123123'  WHERE  `id` = 2 [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T15:51:47+08:00 ] ::1 ::1 POST /api/Admins/update_link
+[ log ] localhost:90/api/Admins/update_link [运行时间：1.130000s][吞吐率：0.88req/s] [内存消耗：2,511.20kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Admins',
+    2 => 'update_link',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '662',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=75i3h1ee63o092fejdvu0q2pq6',
+  'host' => 'localhost:90',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => 'b794ed49-9dae-4aa9-9efd-f462b9fd1297',
+  'cache-control' => 'no-cache',
+  'content-type' => 'multipart/form-data; boundary=--------------------------909686073635823088071766',
+)
+[ info ] [ PARAM ] array (
+  '/api/Admins/update_link' => '',
+  'param' => 
+  array (
+    'id' => '2',
+    'token' => 'A7mF5fOwo4PlzXzaL4HdTsPr7enr9lw/+CzrykJPjxw=',
+    'sort' => '619787',
+    'name' => '123',
+    'url' => '1231',
+  ),
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Admins->update_link[ D:\WWW\forum\application\api\controller\Admins.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.021000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_link` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] UPDATE `cms_link`  SET `name`='123',`url`='1231'  WHERE  `id` = 2 [ RunTime:0.003000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T15:52:28+08:00 ] ::1 ::1 POST /api/Admins/delete_link
+[ log ] localhost:90/api/Admins/delete_link [运行时间：1.144000s][吞吐率：0.87req/s] [内存消耗：2,509.61kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Admins',
+    2 => 'delete_link',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '662',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=75i3h1ee63o092fejdvu0q2pq6',
+  'host' => 'localhost:90',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => 'f081abe4-cd47-41a8-87b7-532635e89f0f',
+  'cache-control' => 'no-cache',
+  'content-type' => 'multipart/form-data; boundary=--------------------------001494855948223258399841',
+)
+[ info ] [ PARAM ] array (
+  '/api/Admins/delete_link' => '',
+  'param' => 
+  array (
+    'id' => '2',
+    'token' => 'A7mF5fOwo4PlzXzaL4HdTsPr7enr9lw/+CzrykJPjxw=',
+    'sort' => '619787',
+    'name' => '123',
+    'url' => '1231',
+  ),
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Admins->delete_link[ D:\WWW\forum\application\api\controller\Admins.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.015000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_link` [ RunTime:0.022000s ]
+[ sql ] [ SQL ] DELETE FROM `cms_link`    WHERE  `id` = 2 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T15:58:32+08:00 ] ::1 ::1 POST /api/Admins/query_article_update
+[ log ] localhost:90/api/Admins/query_article_update [运行时间：1.157000s][吞吐率：0.86req/s] [内存消耗：2,515.71kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Admins',
+    2 => 'query_article_update',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '662',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=75i3h1ee63o092fejdvu0q2pq6',
+  'host' => 'localhost:90',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => '8416deff-2635-4683-89bf-f827cfd37a04',
+  'cache-control' => 'no-cache',
+  'content-type' => 'multipart/form-data; boundary=--------------------------426039827341582045977413',
+)
+[ info ] [ PARAM ] array (
+  '/api/Admins/query_article_update' => '',
+  'param' => 
+  array (
+    'id' => '2',
+    'token' => 'A7mF5fOwo4PlzXzaL4HdTsPr7enr9lw/+CzrykJPjxw=',
+    'sort' => '619787',
+    'name' => '123',
+    'url' => '1231',
+  ),
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Admins->query_article_update[ D:\WWW\forum\application\api\controller\Admins.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.024000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_article` [ RunTime:0.020000s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`deleteTime` FROM `cms_article` WHERE  `status` = 1 [ RunTime:0.003000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T15:59:51+08:00 ] ::1 ::1 POST /api/Admins/update_article
+[ log ] localhost:90/api/Admins/update_article [运行时间：1.133000s][吞吐率：0.88req/s] [内存消耗：2,513.35kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Admins',
+    2 => 'update_article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '662',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=75i3h1ee63o092fejdvu0q2pq6',
+  'host' => 'localhost:90',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => '893a9b5c-ab0e-4828-8f0d-b60cf1b2ab73',
+  'cache-control' => 'no-cache',
+  'content-type' => 'multipart/form-data; boundary=--------------------------064579898381799619827200',
+)
+[ info ] [ PARAM ] array (
+  '/api/Admins/update_article' => '',
+  'param' => 
+  array (
+    'id' => '1',
+    'token' => 'A7mF5fOwo4PlzXzaL4HdTsPr7enr9lw/+CzrykJPjxw=',
+    'sort' => '619787',
+    'name' => '123',
+    'url' => '1231',
+  ),
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Admins->update_article[ D:\WWW\forum\application\api\controller\Admins.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.003000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_article` [ RunTime:0.022000s ]
+[ sql ] [ SQL ] UPDATE `cms_article`  SET `status`=0  WHERE  `id` = 1 [ RunTime:0.003000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T16:02:27+08:00 ] ::1 ::1 POST /api/Admins/delete_article_all
+[ log ] localhost:90/api/Admins/delete_article_all [运行时间：1.145000s][吞吐率：0.87req/s] [内存消耗：2,512.54kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Admins',
+    2 => 'delete_article_all',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '662',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=75i3h1ee63o092fejdvu0q2pq6',
+  'host' => 'localhost:90',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => '345e89f7-c000-41fc-a386-e28b0f0f39ea',
+  'cache-control' => 'no-cache',
+  'content-type' => 'multipart/form-data; boundary=--------------------------300754154333293002322308',
+)
+[ info ] [ PARAM ] array (
+  '/api/Admins/delete_article_all' => '',
+  'param' => 
+  array (
+    'id' => '1',
+    'token' => 'A7mF5fOwo4PlzXzaL4HdTsPr7enr9lw/+CzrykJPjxw=',
+    'sort' => '619787',
+    'name' => '123',
+    'url' => '1231',
+  ),
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Admins->delete_article_all[ D:\WWW\forum\application\api\controller\Admins.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.016000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_article` [ RunTime:0.022000s ]
+[ sql ] [ SQL ] DELETE FROM `cms_article`    WHERE  `id` = 1 [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T16:07:38+08:00 ] ::1 ::1 POST /api/Index/queryLink
+[ log ] localhost:90/api/Index/queryLink [运行时间：1.128000s][吞吐率：0.89req/s] [内存消耗：2,100.29kb] [文件加载：47]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Index',
+    2 => 'queryLink',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=75i3h1ee63o092fejdvu0q2pq6',
+  'host' => 'localhost:90',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.1.1',
+  'postman-token' => '3c6545ed-7e17-49a5-a24e-6fe4613a94f6',
+  'cache-control' => 'no-cache',
+  'content-type' => 'multipart/form-data; boundary=--------------------------770079654084674950515542',
+)
+[ info ] [ PARAM ] array (
+  '/api/Index/queryLink' => '',
+)
+[ info ] [ RUN ] app\api\controller\Index->queryLink[ D:\WWW\forum\application\api\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.020000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_link` [ RunTime:0.021000s ]
+[ sql ] [ SQL ] SELECT * FROM `cms_link` [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T16:22:51+08:00 ] ::1 ::1 GET /
+[ log ] localhost:90/ [运行时间：0.686000s][吞吐率：1.46req/s] [内存消耗：1,284.00kb] [文件加载：37]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:90',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Webstorm-a327319a=a77430c4-efbc-4a9d-8ca2-a54c40e80e3e',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-03-23T16:22:52+08:00 ] ::1 ::1 GET /favicon.ico
+[ log ] localhost:90/favicon.ico [运行时间：0.021000s][吞吐率：47.62req/s] [内存消耗：1,286.90kb] [文件加载：37]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:90',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost:90/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Webstorm-a327319a=a77430c4-efbc-4a9d-8ca2-a54c40e80e3e',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-03-23T16:23:46+08:00 ] ::1 ::1 GET /
+[ log ] localhost:90/ [运行时间：0.027000s][吞吐率：37.04req/s] [内存消耗：1,284.01kb] [文件加载：37]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:90',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Webstorm-a327319a=a77430c4-efbc-4a9d-8ca2-a54c40e80e3e',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-03-23T16:45:14+08:00 ] ::1 ::1 POST /api/Index/comment
+[ log ] localhost:90/api/Index/comment [运行时间：0.025000s][吞吐率：40.00req/s] [内存消耗：1,554.68kb] [文件加载：44]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Index',
+    2 => 'comment',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:90',
+  'connection' => 'keep-alive',
+  'content-length' => '20',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://192.168.2.105:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/json;charset=UTF-8',
+  'referer' => 'http://192.168.2.105:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/api/Index/comment' => '',
+  'param' => 
+  array (
+    'id' => '1',
+  ),
+)
+[ info ] [ RUN ] app\api\controller\Index->comment[ D:\WWW\forum\application\api\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: aid[D:\WWW\forum\application\api\controller\Index.php:29]
+
+---------------------------------------------------------------
+[ 2018-03-23T16:49:17+08:00 ] ::1 ::1 POST /api/Index/comment
+[ log ] localhost:90/api/Index/comment [运行时间：0.025000s][吞吐率：40.00req/s] [内存消耗：1,554.67kb] [文件加载：44]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Index',
+    2 => 'comment',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:90',
+  'connection' => 'keep-alive',
+  'content-length' => '20',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://192.168.2.105:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/json;charset=UTF-8',
+  'referer' => 'http://192.168.2.105:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/api/Index/comment' => '',
+  'param' => 
+  array (
+    'id' => '1',
+  ),
+)
+[ info ] [ RUN ] app\api\controller\Index->comment[ D:\WWW\forum\application\api\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: aid[D:\WWW\forum\application\api\controller\Index.php:29]
+
+---------------------------------------------------------------
+[ 2018-03-23T16:53:18+08:00 ] ::1 ::1 POST /api/Index/comment
+[ log ] localhost:90/api/Index/comment [运行时间：0.026000s][吞吐率：38.46req/s] [内存消耗：1,554.67kb] [文件加载：44]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Index',
+    2 => 'comment',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:90',
+  'connection' => 'keep-alive',
+  'content-length' => '20',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://192.168.2.105:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/json;charset=UTF-8',
+  'referer' => 'http://192.168.2.105:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/api/Index/comment' => '',
+  'param' => 
+  array (
+    'id' => '1',
+  ),
+)
+[ info ] [ RUN ] app\api\controller\Index->comment[ D:\WWW\forum\application\api\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: aid[D:\WWW\forum\application\api\controller\Index.php:29]
+
+---------------------------------------------------------------
+[ 2018-03-23T16:54:29+08:00 ] ::1 ::1 POST /api/Index/comment
+[ log ] localhost:90/api/Index/comment [运行时间：0.022000s][吞吐率：45.45req/s] [内存消耗：1,554.67kb] [文件加载：44]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Index',
+    2 => 'comment',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:90',
+  'connection' => 'keep-alive',
+  'content-length' => '20',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://192.168.2.105:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/json;charset=UTF-8',
+  'referer' => 'http://192.168.2.105:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/api/Index/comment' => '',
+  'param' => 
+  array (
+    'id' => '1',
+  ),
+)
+[ info ] [ RUN ] app\api\controller\Index->comment[ D:\WWW\forum\application\api\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: aid[D:\WWW\forum\application\api\controller\Index.php:29]
+
+---------------------------------------------------------------
+[ 2018-03-23T16:54:33+08:00 ] ::1 ::1 POST /api/Index/comment
+[ log ] localhost:90/api/Index/comment [运行时间：0.021000s][吞吐率：47.62req/s] [内存消耗：1,554.67kb] [文件加载：44]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Index',
+    2 => 'comment',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:90',
+  'connection' => 'keep-alive',
+  'content-length' => '20',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://192.168.2.105:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/json;charset=UTF-8',
+  'referer' => 'http://192.168.2.105:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/api/Index/comment' => '',
+  'param' => 
+  array (
+    'id' => '1',
+  ),
+)
+[ info ] [ RUN ] app\api\controller\Index->comment[ D:\WWW\forum\application\api\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: aid[D:\WWW\forum\application\api\controller\Index.php:29]
+
+---------------------------------------------------------------
+[ 2018-03-23T16:54:48+08:00 ] ::1 ::1 POST /api/Index/comment
+[ log ] localhost:90/api/Index/comment [运行时间：0.023000s][吞吐率：43.48req/s] [内存消耗：1,554.67kb] [文件加载：44]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Index',
+    2 => 'comment',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:90',
+  'connection' => 'keep-alive',
+  'content-length' => '20',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://192.168.2.105:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/json;charset=UTF-8',
+  'referer' => 'http://192.168.2.105:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/api/Index/comment' => '',
+  'param' => 
+  array (
+    'id' => '1',
+  ),
+)
+[ info ] [ RUN ] app\api\controller\Index->comment[ D:\WWW\forum\application\api\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: aid[D:\WWW\forum\application\api\controller\Index.php:29]
+
+---------------------------------------------------------------
+[ 2018-03-23T17:30:54+08:00 ] ::1 ::1 POST /api/Login/login
+[ log ] localhost:90/api/Login/login [运行时间：1.051000s][吞吐率：0.95req/s] [内存消耗：2,293.60kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:90',
+  'connection' => 'keep-alive',
+  'content-length' => '49',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://192.168.2.105:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/json;charset=UTF-8',
+  'referer' => 'http://192.168.2.105:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/api/Login/login' => '',
+  'param' => 
+  array (
+    'username' => 'admin',
+    'password' => 'admin',
+  ),
+)
+[ info ] [ RUN ] app\api\controller\Login->login[ D:\WWW\forum\application\api\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.012000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_user` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `id`,`password` FROM `cms_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T17:31:50+08:00 ] ::1 ::1 POST /api/Login/login
+[ log ] localhost:90/api/Login/login [运行时间：1.042000s][吞吐率：0.96req/s] [内存消耗：2,293.60kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:90',
+  'connection' => 'keep-alive',
+  'content-length' => '49',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://192.168.2.105:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/json;charset=UTF-8',
+  'referer' => 'http://192.168.2.105:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/api/Login/login' => '',
+  'param' => 
+  array (
+    'username' => 'admin',
+    'password' => 'admin',
+  ),
+)
+[ info ] [ RUN ] app\api\controller\Login->login[ D:\WWW\forum\application\api\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.004000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_user` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT `id`,`password` FROM `cms_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T17:32:45+08:00 ] ::1 ::1 POST /api/Login/login
+[ log ] localhost:90/api/Login/login [运行时间：1.038000s][吞吐率：0.96req/s] [内存消耗：2,293.60kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:90',
+  'connection' => 'keep-alive',
+  'content-length' => '49',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://192.168.2.105:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/json;charset=UTF-8',
+  'referer' => 'http://192.168.2.105:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/api/Login/login' => '',
+  'param' => 
+  array (
+    'username' => 'admin',
+    'password' => 'admin',
+  ),
+)
+[ info ] [ RUN ] app\api\controller\Login->login[ D:\WWW\forum\application\api\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.002000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_user` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `id`,`password` FROM `cms_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T17:35:20+08:00 ] ::1 ::1 POST /api/Login/login
+[ log ] localhost:90/api/Login/login [运行时间：1.050000s][吞吐率：0.95req/s] [内存消耗：2,293.60kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:90',
+  'connection' => 'keep-alive',
+  'content-length' => '49',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://192.168.2.105:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/json;charset=UTF-8',
+  'referer' => 'http://192.168.2.105:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/api/Login/login' => '',
+  'param' => 
+  array (
+    'username' => 'admin',
+    'password' => 'admin',
+  ),
+)
+[ info ] [ RUN ] app\api\controller\Login->login[ D:\WWW\forum\application\api\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.010000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_user` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `id`,`password` FROM `cms_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T17:35:54+08:00 ] ::1 ::1 POST /api/Login/login
+[ log ] localhost:90/api/Login/login [运行时间：1.044000s][吞吐率：0.96req/s] [内存消耗：2,293.60kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:90',
+  'connection' => 'keep-alive',
+  'content-length' => '49',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://192.168.2.105:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/json;charset=UTF-8',
+  'referer' => 'http://192.168.2.105:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/api/Login/login' => '',
+  'param' => 
+  array (
+    'username' => 'admin',
+    'password' => 'admin',
+  ),
+)
+[ info ] [ RUN ] app\api\controller\Login->login[ D:\WWW\forum\application\api\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.009000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_user` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT `id`,`password` FROM `cms_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T17:36:17+08:00 ] ::1 ::1 POST /api/Login/login
+[ log ] localhost:90/api/Login/login [运行时间：1.046000s][吞吐率：0.96req/s] [内存消耗：2,293.60kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:90',
+  'connection' => 'keep-alive',
+  'content-length' => '49',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://192.168.2.105:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/json;charset=UTF-8',
+  'referer' => 'http://192.168.2.105:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/api/Login/login' => '',
+  'param' => 
+  array (
+    'username' => 'admin',
+    'password' => 'admin',
+  ),
+)
+[ info ] [ RUN ] app\api\controller\Login->login[ D:\WWW\forum\application\api\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.010000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_user` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT `id`,`password` FROM `cms_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T17:37:52+08:00 ] ::1 ::1 POST /api/Login/login
+[ log ] localhost:90/api/Login/login [运行时间：1.032000s][吞吐率：0.97req/s] [内存消耗：2,293.60kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:90',
+  'connection' => 'keep-alive',
+  'content-length' => '49',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://192.168.2.105:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/json;charset=UTF-8',
+  'referer' => 'http://192.168.2.105:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/api/Login/login' => '',
+  'param' => 
+  array (
+    'username' => 'admin',
+    'password' => 'admin',
+  ),
+)
+[ info ] [ RUN ] app\api\controller\Login->login[ D:\WWW\forum\application\api\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.994000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_user` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `id`,`password` FROM `cms_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T17:38:27+08:00 ] ::1 ::1 POST /api/Login/login
+[ log ] localhost:90/api/Login/login [运行时间：1.053000s][吞吐率：0.95req/s] [内存消耗：2,293.60kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:90',
+  'connection' => 'keep-alive',
+  'content-length' => '49',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://192.168.2.105:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/json;charset=UTF-8',
+  'referer' => 'http://192.168.2.105:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/api/Login/login' => '',
+  'param' => 
+  array (
+    'username' => 'admin',
+    'password' => 'admin',
+  ),
+)
+[ info ] [ RUN ] app\api\controller\Login->login[ D:\WWW\forum\application\api\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.017000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_user` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `id`,`password` FROM `cms_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T17:39:40+08:00 ] ::1 ::1 POST /api/Login/login
+[ log ] localhost:90/api/Login/login [运行时间：1.056000s][吞吐率：0.95req/s] [内存消耗：2,293.60kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:90',
+  'connection' => 'keep-alive',
+  'content-length' => '49',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://192.168.2.105:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/json;charset=UTF-8',
+  'referer' => 'http://192.168.2.105:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/api/Login/login' => '',
+  'param' => 
+  array (
+    'username' => 'admin',
+    'password' => 'admin',
+  ),
+)
+[ info ] [ RUN ] app\api\controller\Login->login[ D:\WWW\forum\application\api\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.020000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_user` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT `id`,`password` FROM `cms_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T17:40:50+08:00 ] ::1 ::1 POST /api/Login/login
+[ log ] localhost:90/api/Login/login [运行时间：1.050000s][吞吐率：0.95req/s] [内存消耗：2,293.60kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:90',
+  'connection' => 'keep-alive',
+  'content-length' => '49',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://192.168.2.105:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/json;charset=UTF-8',
+  'referer' => 'http://192.168.2.105:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/api/Login/login' => '',
+  'param' => 
+  array (
+    'username' => 'admin',
+    'password' => 'admin',
+  ),
+)
+[ info ] [ RUN ] app\api\controller\Login->login[ D:\WWW\forum\application\api\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.011000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_user` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT `id`,`password` FROM `cms_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T17:42:10+08:00 ] ::1 ::1 POST /api/Login/login
+[ log ] localhost:90/api/Login/login [运行时间：1.035000s][吞吐率：0.97req/s] [内存消耗：2,293.60kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:90',
+  'connection' => 'keep-alive',
+  'content-length' => '49',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://192.168.2.105:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/json;charset=UTF-8',
+  'referer' => 'http://192.168.2.105:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/api/Login/login' => '',
+  'param' => 
+  array (
+    'username' => 'admin',
+    'password' => 'admin',
+  ),
+)
+[ info ] [ RUN ] app\api\controller\Login->login[ D:\WWW\forum\application\api\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.001000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_user` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `id`,`password` FROM `cms_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T17:44:32+08:00 ] ::1 ::1 POST /api/Login/login
+[ log ] localhost:90/api/Login/login [运行时间：1.040000s][吞吐率：0.96req/s] [内存消耗：2,293.60kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:90',
+  'connection' => 'keep-alive',
+  'content-length' => '49',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://192.168.2.105:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/json;charset=UTF-8',
+  'referer' => 'http://192.168.2.105:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/api/Login/login' => '',
+  'param' => 
+  array (
+    'username' => 'admin',
+    'password' => 'admin',
+  ),
+)
+[ info ] [ RUN ] app\api\controller\Login->login[ D:\WWW\forum\application\api\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.002000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_user` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT `id`,`password` FROM `cms_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T17:45:39+08:00 ] ::1 ::1 POST /api/Login/login
+[ log ] localhost:90/api/Login/login [运行时间：1.049000s][吞吐率：0.95req/s] [内存消耗：2,293.60kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:90',
+  'connection' => 'keep-alive',
+  'content-length' => '49',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://192.168.2.105:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/json;charset=UTF-8',
+  'referer' => 'http://192.168.2.105:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/api/Login/login' => '',
+  'param' => 
+  array (
+    'username' => 'admin',
+    'password' => 'admin',
+  ),
+)
+[ info ] [ RUN ] app\api\controller\Login->login[ D:\WWW\forum\application\api\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.012000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_user` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `id`,`password` FROM `cms_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T17:46:38+08:00 ] ::1 ::1 POST /api/Login/login
+[ log ] localhost:90/api/Login/login [运行时间：1.050000s][吞吐率：0.95req/s] [内存消耗：2,293.60kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:90',
+  'connection' => 'keep-alive',
+  'content-length' => '49',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://192.168.2.105:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/json;charset=UTF-8',
+  'referer' => 'http://192.168.2.105:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/api/Login/login' => '',
+  'param' => 
+  array (
+    'username' => 'admin',
+    'password' => 'admin',
+  ),
+)
+[ info ] [ RUN ] app\api\controller\Login->login[ D:\WWW\forum\application\api\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.012000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_user` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT `id`,`password` FROM `cms_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T17:47:50+08:00 ] ::1 ::1 POST /api/Login/login
+[ log ] localhost:90/api/Login/login [运行时间：1.047000s][吞吐率：0.96req/s] [内存消耗：2,293.60kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:90',
+  'connection' => 'keep-alive',
+  'content-length' => '49',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://192.168.2.105:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/json;charset=UTF-8',
+  'referer' => 'http://192.168.2.105:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/api/Login/login' => '',
+  'param' => 
+  array (
+    'username' => 'admin',
+    'password' => 'admin',
+  ),
+)
+[ info ] [ RUN ] app\api\controller\Login->login[ D:\WWW\forum\application\api\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.011000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_user` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT `id`,`password` FROM `cms_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T17:48:08+08:00 ] ::1 ::1 POST /api/Login/login
+[ log ] localhost:90/api/Login/login [运行时间：1.038000s][吞吐率：0.96req/s] [内存消耗：2,293.60kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:90',
+  'connection' => 'keep-alive',
+  'content-length' => '49',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://192.168.2.105:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/json;charset=UTF-8',
+  'referer' => 'http://192.168.2.105:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/api/Login/login' => '',
+  'param' => 
+  array (
+    'username' => 'admin',
+    'password' => 'admin',
+  ),
+)
+[ info ] [ RUN ] app\api\controller\Login->login[ D:\WWW\forum\application\api\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.002000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_user` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT `id`,`password` FROM `cms_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T17:49:17+08:00 ] ::1 ::1 POST /api/Login/login
+[ log ] localhost:90/api/Login/login [运行时间：1.040000s][吞吐率：0.96req/s] [内存消耗：2,293.60kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:90',
+  'connection' => 'keep-alive',
+  'content-length' => '49',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://192.168.2.105:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/json;charset=UTF-8',
+  'referer' => 'http://192.168.2.105:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/api/Login/login' => '',
+  'param' => 
+  array (
+    'username' => 'admin',
+    'password' => 'admin',
+  ),
+)
+[ info ] [ RUN ] app\api\controller\Login->login[ D:\WWW\forum\application\api\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.001000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_user` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `id`,`password` FROM `cms_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T17:50:06+08:00 ] ::1 ::1 POST /api/Login/login
+[ log ] localhost:90/api/Login/login [运行时间：1.046000s][吞吐率：0.96req/s] [内存消耗：2,293.60kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:90',
+  'connection' => 'keep-alive',
+  'content-length' => '49',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://192.168.2.105:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/json;charset=UTF-8',
+  'referer' => 'http://192.168.2.105:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/api/Login/login' => '',
+  'param' => 
+  array (
+    'username' => 'admin',
+    'password' => 'admin',
+  ),
+)
+[ info ] [ RUN ] app\api\controller\Login->login[ D:\WWW\forum\application\api\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.010000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_user` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT `id`,`password` FROM `cms_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T17:50:18+08:00 ] ::1 ::1 POST /api/Login/login
+[ log ] localhost:90/api/Login/login [运行时间：1.046000s][吞吐率：0.96req/s] [内存消耗：2,293.60kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:90',
+  'connection' => 'keep-alive',
+  'content-length' => '49',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://192.168.2.105:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/json;charset=UTF-8',
+  'referer' => 'http://192.168.2.105:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/api/Login/login' => '',
+  'param' => 
+  array (
+    'username' => 'admin',
+    'password' => 'admin',
+  ),
+)
+[ info ] [ RUN ] app\api\controller\Login->login[ D:\WWW\forum\application\api\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.011000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_user` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `id`,`password` FROM `cms_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T17:50:46+08:00 ] ::1 ::1 POST /api/Login/login
+[ log ] localhost:90/api/Login/login [运行时间：1.065000s][吞吐率：0.94req/s] [内存消耗：2,191.88kb] [文件加载：46]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:90',
+  'connection' => 'keep-alive',
+  'content-length' => '49',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://192.168.2.105:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/json;charset=UTF-8',
+  'referer' => 'http://192.168.2.105:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/api/Login/login' => '',
+  'param' => 
+  array (
+    'username' => 'damin',
+    'password' => 'admin',
+  ),
+)
+[ info ] [ RUN ] app\api\controller\Login->login[ D:\WWW\forum\application\api\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.031000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_user` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT `id`,`password` FROM `cms_user` WHERE  `username` = 'damin' LIMIT 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T17:51:45+08:00 ] ::1 ::1 POST /api/Login/login
+[ log ] localhost:90/api/Login/login [运行时间：1.040000s][吞吐率：0.96req/s] [内存消耗：2,293.60kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:90',
+  'connection' => 'keep-alive',
+  'content-length' => '49',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://192.168.2.105:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/json;charset=UTF-8',
+  'referer' => 'http://192.168.2.105:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/api/Login/login' => '',
+  'param' => 
+  array (
+    'username' => 'admin',
+    'password' => 'admin',
+  ),
+)
+[ info ] [ RUN ] app\api\controller\Login->login[ D:\WWW\forum\application\api\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.001000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_user` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT `id`,`password` FROM `cms_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T17:53:21+08:00 ] ::1 ::1 POST /api/Login/login
+[ log ] localhost:90/api/Login/login [运行时间：1.038000s][吞吐率：0.96req/s] [内存消耗：2,293.60kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:90',
+  'connection' => 'keep-alive',
+  'content-length' => '49',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://192.168.2.105:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/json;charset=UTF-8',
+  'referer' => 'http://192.168.2.105:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/api/Login/login' => '',
+  'param' => 
+  array (
+    'username' => 'admin',
+    'password' => 'admin',
+  ),
+)
+[ info ] [ RUN ] app\api\controller\Login->login[ D:\WWW\forum\application\api\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.002000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_user` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT `id`,`password` FROM `cms_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-03-23T17:54:08+08:00 ] ::1 ::1 POST /api/Login/login
+[ log ] localhost:90/api/Login/login [运行时间：1.039000s][吞吐率：0.96req/s] [内存消耗：2,293.60kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\forum\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:90',
+  'connection' => 'keep-alive',
+  'content-length' => '49',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://192.168.2.105:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36',
+  'content-type' => 'application/json;charset=UTF-8',
+  'referer' => 'http://192.168.2.105:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/api/Login/login' => '',
+  'param' => 
+  array (
+    'username' => 'admin',
+    'password' => 'admin',
+  ),
+)
+[ info ] [ RUN ] app\api\controller\Login->login[ D:\WWW\forum\application\api\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.001000s ] mysql:dbname=forum;host=localhost;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cms_user` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `id`,`password` FROM `cms_user` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
